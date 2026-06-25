@@ -89,8 +89,8 @@ run_step "08" "lightdm-settings"                "bash    $Base/lightdm-settings/
 run_step "09" "themes"                          "bash    $Base/themes/run.sh"
 run_step "10" "grub-theme"                      "bash    $Base/grub-theme/run.sh"
 run_step "11" "pictures"                        "bash    $Base/pictures/run.sh"
-run_step "12" "user-configuration-settings"     "bash    $Base/user-configuration-settings/run.sh"
-run_step "13" "skel-configuration-settings"     "bash    $Base/skel-configuration-settings/run.sh"
-run_step "14" "fastfetch"                       "bash    $Base/fastfetch/run.sh"
+#run_step "12" "user-configuration-settings"     "bash    $Base/user-configuration-settings/run.sh"
+#run_step "13" "skel-configuration-settings"     "bash    $Base/skel-configuration-settings/run.sh"
+#run_step "14" "fastfetch"                       "bash    $Base/fastfetch/run.sh"
 
 print_summary

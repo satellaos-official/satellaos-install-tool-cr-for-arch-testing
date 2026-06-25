@@ -6,22 +6,22 @@
 echo "Installing core system and XFCE desktop..."
 sudo pacman -Syu --needed --noconfirm \
   alsa-utils \
-  dbus \
   gvfs \
-  gvfs-smb \
-  gvfs-mtp \
   gvfs-afc \
-  gvfs-gphoto2 \
-  gvfs-google \
+  gvfs-dnssd \
   gvfs-goa \
+  gvfs-gphoto2 \
+  gvfs-mtp \
   gvfs-nfs \
+  gvfs-onedrive \
+  gvfs-smb \
+  gvfs-wsdd \
   lightdm \
   lightdm-gtk-greeter \
   ntfs-3g \
   orca \
   pavucontrol \
   pulseaudio \
-  pulseaudio-alsa \
   thunar \
   thunar-archive-plugin \
   udiskie \
@@ -29,14 +29,22 @@ sudo pacman -Syu --needed --noconfirm \
   xorg-xrandr \
   xorg-xset \
   xorg-xsetroot \
+  xorg-xrdb \
+  xorg-xmodmap \
   xorg-xprop \
-  xorg-server \
+  xorg-xgamma \
+  xorg-apps \
   xorg-xinit \
+  xdg-user-dirs \
+  xdg utils \
   xfce4 \
   xfce4-battery-plugin \
   xfce4-clipman-plugin \
+  xfce4-docklike-plugin \
+  xfce4-indicator-plugin \
   xfce4-notifyd \
   xfce4-panel \
+  xfce4-panel-profiles \
   xfce4-power-manager \
   xfce4-pulseaudio-plugin \
   xfce4-screensaver \
@@ -45,18 +53,15 @@ sudo pacman -Syu --needed --noconfirm \
   xfce4-terminal \
   xfce4-whiskermenu-plugin \
   xfdesktop \
-  xfwm4
+  xfwm4 \
 
 # --------------------------------------------------
-# AUR packages (resmi depolarda bulunmayanlar)
+# AUR packages (Unofficial Repos)
 # yay kurulu olmalı: https://aur.archlinux.org/packages/yay
 # --------------------------------------------------
 echo "Installing AUR-only XFCE plugins..."
 yay -S --needed --noconfirm \
   xfce4-datetime-plugin \
-  xfce4-docklike-plugin \
-  xfce4-indicator-plugin \
-  xfce4-panel-profiles
 
 # --------------------------------------------------
 # Fonts, themes, and visual customization
@@ -64,8 +69,7 @@ yay -S --needed --noconfirm \
 # --------------------------------------------------
 echo "Installing fonts and visual customization..."
 yay -S --needed --noconfirm \
-  ttf-bebas-neue \
-  ttf-montserrat
+  ttf-montserrat \
 
 # --------------------------------------------------
 # PolicyKit (GUI authorization support)
