@@ -2,17 +2,7 @@
 
 echo "Updating The LightDM Settings"
 
-if [ -n "$SUDO_USER" ]; then
-    REAL_HOME=$(getent passwd "$SUDO_USER" | cut -d: -f6)
-else
-    REAL_HOME="$HOME"
-fi
+Base=/satellaos-install-tool-cr-for-arch-testing/tree-installer-system/lightdm-settings/lightdm"
 
-SOURCE_DIR="$REAL_HOME/satellaos-install-tool-cr-for-arch-testing/tree-installer-system/lightdm-settings/lightdm"
-
-if [ ! -d "$SOURCE_DIR" ]; then
-    echo "ERROR: Source directory not found: $SOURCE_DIR"
-    exit 1
-fi
-
-sudo cp "$SOURCE_DIR"/* /etc/lightdm/
+sudo cp "$Base/lightdm.conf" /etc/lightdm/
+sudo cp "$Base/lightdm-gtk-greeter.conf" /etc/lightdm/
