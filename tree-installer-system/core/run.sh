@@ -56,13 +56,6 @@ sudo pacman -Syu --needed --noconfirm \
   xfwm4 \
 
 # --------------------------------------------------
-# AUR packages (Unofficial Repos)
-# --------------------------------------------------
-echo "Installing AUR-only XFCE plugins..."
-yay -S --needed --noconfirm \
-  xfce4-datetime-plugin \
-
-# --------------------------------------------------
 # Fonts, themes, and visual customization
 # Cosmetic and personalization packages
 # --------------------------------------------------
