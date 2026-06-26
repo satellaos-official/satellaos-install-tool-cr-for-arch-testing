@@ -36,7 +36,7 @@ sudo pacman -Syu --needed --noconfirm \
   xorg-apps \
   xorg-xinit \
   xdg-user-dirs \
-  xdg utils \
+  xdg-utils \
   xfce4 \
   xfce4-battery-plugin \
   xfce4-clipman-plugin \
@@ -57,7 +57,6 @@ sudo pacman -Syu --needed --noconfirm \
 
 # --------------------------------------------------
 # AUR packages (Unofficial Repos)
-# yay kurulu olmalı: https://aur.archlinux.org/packages/yay
 # --------------------------------------------------
 echo "Installing AUR-only XFCE plugins..."
 yay -S --needed --noconfirm \
@@ -68,7 +67,7 @@ yay -S --needed --noconfirm \
 # Cosmetic and personalization packages
 # --------------------------------------------------
 echo "Installing fonts and visual customization..."
-yay -S --needed --noconfirm \
+sudo pacman -S --needed --noconfirm \
   ttf-montserrat \
 
 # --------------------------------------------------
