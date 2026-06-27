@@ -35,6 +35,7 @@ sudo pacman -Syu --needed --noconfirm \
   xorg-xgamma \
   xorg-apps \
   xorg-xinit \
+  xorg-server \
   xdg-user-dirs \
   xdg-utils \
   xfce4 \
@@ -70,3 +71,9 @@ echo "Installing policykit components..."
 sudo pacman -S --needed --noconfirm \
   mate-polkit \
   polkit
+
+# --------------------------------------------------
+# LightDM Enable
+# --------------------------------------------------
+echo "Enabling The LightDM Service"
+sudo systemctl enable lightdm.service
