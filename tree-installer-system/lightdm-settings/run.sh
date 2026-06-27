@@ -6,5 +6,4 @@ Base="$HOME/satellaos-install-tool-cr-for-arch-testing/tree-installer-system/lig
 
 sudo mkdir -p /etc/lightdm
 
-sudo cp "$Base/lightdm.conf" /etc/lightdm/lightdm.conf
 sudo cp "$Base/lightdm-gtk-greeter.conf" /etc/lightdm/lightdm-gtk-greeter.conf
