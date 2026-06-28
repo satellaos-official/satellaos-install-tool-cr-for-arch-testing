@@ -2,7 +2,7 @@
 set -e
 set -u
 
-BASE="$HOME/satellaos-install-tool-cr/tree-installer-system/user-configuration-settings/backup/"
+BASE="$HOME/satellaos-install-tool-cr-for-arch-testing/tree-installer-system/user-configuration-settings/backup/"
 mkdir -p "$BASE"
 
 echo "Backing up XFCE configuration and autostart settings..."

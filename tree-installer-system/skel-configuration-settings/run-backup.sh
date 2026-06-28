@@ -2,7 +2,7 @@
 set -e
 set -u
 
-Base="$HOME/satellaos-install-tool-cr/tree-installer-system/skel-configuration-settings/backup/"
+Base="$HOME/satellaos-install-tool-cr-for-arch-testing/tree-installer-system/skel-configuration-settings/backup/"
 mkdir -p $Base
 
 echo "Backing up /etc/skel directory..."
